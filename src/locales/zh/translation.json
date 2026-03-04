@@ -1,0 +1,126 @@
+{
+  "common": {
+    "na": "无"
+  },
+  "nav": {
+    "overview": "概览",
+    "seasons": "季度",
+    "scores": "我的评分",
+    "community": "社区",
+    "franchises": "系列"
+  },
+  "status": {
+    "completed": "已完成",
+    "watching": "观看中",
+    "plan_to_watch": "计划观看",
+    "on_hold": "搁置",
+    "dropped": "弃坑"
+  },
+  "kpi": {
+    "total_episodes": "总集数",
+    "avg_score": "平均分",
+    "top_genre": "最爱类型",
+    "top_studio": "最爱工作室",
+    "total_days": "总天数"
+  },
+  "seasons": {
+    "winter": "冬季",
+    "spring": "春季",
+    "summer": "夏季",
+    "fall": "秋季",
+    "evolution": "演变",
+    "most_productive": "最多产的季度",
+    "least_active": "最不活跃的季度",
+    "completed_animes": "部已完成动漫",
+    "best_scored": "最高分",
+    "worst_scored": "最低分",
+    "current_airing": "当前播出（人气排名）"
+  },
+  "table": {
+    "cover": "封面",
+    "title": "标题",
+    "mal_score": "MAL评分",
+    "members": "成员",
+    "list_status": "状态 (列表)",
+    "anime": "动漫",
+    "my_status": "我的状态"
+  },
+  "charts": {
+    "log_scale_note": "Y轴: Log₁₀(n+1)",
+    "most_frequent": "★ 最频繁",
+    "average": "平均",
+    "personal_score": "个人评分",
+    "community_score": "社区评分",
+    "animes": "部动漫",
+    "linear_scale": "线性刻度",
+    "log_scale": "对数刻度",
+    "quantity": "数量",
+    "score": "评分"
+  },
+  "errors": {
+    "rate_limit": "速率限制 — 重试中…",
+    "unauthorized": "会话已过期。请检查您的 Client ID。",
+    "forbidden": "被 MAL API 拒绝访问。",
+    "not_found": "找不到资源。",
+    "no_internet": "无网络连接"
+  },
+  "actions": {
+    "refresh": "刷新数据",
+    "search_placeholder": "搜索系列或动漫...",
+    "in_my_list": "✓ 在我的列表中",
+    "missing_from_list": "不在列表中"
+  },
+  "empty": {
+    "no_anime": "未找到动漫。",
+    "suggestion": "请在 MyAnimeList.net 上将动漫添加到您的列表中"
+  },
+  "filters": {
+    "all": "全部",
+    "completed_only": "仅已完成",
+    "watching_only": "仅观看中"
+  },
+  "stats": {
+    "mean": "平均数",
+    "median": "中位数",
+    "mode": "众数",
+    "std_dev": "标准差",
+    "min": "最小值",
+    "max": "最大值",
+    "metrics": "指标"
+  },
+  "community": {
+    "discrepancy": "差异分析",
+    "top_airing": "全球前20名 (当前播出)",
+    "top_all_time": "MAL 历史前10名",
+    "personal": "个人",
+    "community": "社区"
+  },
+  "franchise": {
+    "no_relations": "所选作品在数据库中没有注册的续集或前传。",
+    "unknown": "未知",
+    "download_png": "下载PNG（高分辨率）",
+    "download_svg": "下载SVG（矢量）",
+    "export_pdf": "导出PDF（自动排版）",
+    "close_graph": "关闭图表",
+    "mapping_connections": "正在映射拓扑连接...",
+    "querying_api": "正在查询MAL API矩阵",
+    "select_seed": "选择一个种子节点",
+    "personal": "个人",
+    "global": "全局",
+    "status": "状态",
+    "episodes": "集数"
+  },
+  "login": {
+  "title": "欢迎使用 MALmetrics",
+  "subtitle": "输入您的凭据以加载仪表盘",
+  "username_label": "MyAnimeList 用户名",
+  "username_placeholder": "例如：YourUsername",
+  "client_id_label": "客户端 ID（API）",
+  "client_id_placeholder": "字母数字字符串",
+  "submit": "进入仪表盘",
+  "help_text": "不知道如何获取客户端 ID？",
+  "help_link": "点击此处阅读三步指南",
+  "username_desc": "您的公开个人资料名称",
+  "client_id_desc": "您的专属 API 连接密钥"
+}
+}

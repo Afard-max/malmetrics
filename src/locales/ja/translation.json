@@ -1,0 +1,126 @@
+{
+  "common": {
+    "na": "なし"
+  },
+  "nav": {
+    "overview": "概要",
+    "seasons": "シーズン",
+    "scores": "スコア",
+    "community": "コミュニティ",
+    "franchises": "シリーズ"
+  },
+  "status": {
+    "completed": "完了",
+    "watching": "視聴中",
+    "plan_to_watch": "視聴予定",
+    "on_hold": "一時停止",
+    "dropped": "ドロップ"
+  },
+  "kpi": {
+    "total_episodes": "総エピソード数",
+    "avg_score": "平均スコア",
+    "top_genre": "トップジャンル",
+    "top_studio": "トップスタジオ",
+    "total_days": "合計日数"
+  },
+  "seasons": {
+    "winter": "冬",
+    "spring": "春",
+    "summer": "夏",
+    "fall": "秋",
+    "evolution": "進化",
+    "most_productive": "最も生産的なシーズン",
+    "least_active": "最も活動の少ないシーズン",
+    "completed_animes": "視聴完了アニメ",
+    "best_scored": "最高評価",
+    "worst_scored": "最低評価",
+    "current_airing": "現在放送中（人気ランキング）"
+  },
+  "table": {
+    "cover": "カバー",
+    "title": "タイトル",
+    "mal_score": "MALスコア",
+    "members": "メンバー",
+    "list_status": "ステータス（リスト）",
+    "anime": "アニメ",
+    "my_status": "マイステータス"
+  },
+  "charts": {
+    "log_scale_note": "Y軸: Log₁₀(n+1)",
+    "most_frequent": "★ 最多",
+    "average": "平均",
+    "personal_score": "マイスコア",
+    "community_score": "コミュニティスコア",
+    "animes": "作品",
+    "linear_scale": "線形スケール",
+    "log_scale": "対数スケール",
+    "quantity": "数量",
+    "score": "スコア"
+  },
+  "errors": {
+    "rate_limit": "レート制限 — 再試行中…",
+    "unauthorized": "セッション期限切れ。Client IDを確認してください。",
+    "forbidden": "MAL APIによるアクセス拒否。",
+    "not_found": "リソースが見つかりません。",
+    "no_internet": "インターネット接続がありません"
+  },
+  "actions": {
+    "refresh": "データを更新",
+    "search_placeholder": "シリーズやアニメを検索...",
+    "in_my_list": "✓ リストに追加済み",
+    "missing_from_list": "リストにありません"
+  },
+  "empty": {
+    "no_anime": "アニメが見つかりません。",
+    "suggestion": "MyAnimeList.netでリストにアニメを追加してください"
+  },
+  "filters": {
+    "all": "すべて",
+    "completed_only": "完了のみ",
+    "watching_only": "視聴中のみ"
+  },
+  "stats": {
+    "mean": "平均値",
+    "median": "中央値",
+    "mode": "最頻値",
+    "std_dev": "標準偏差",
+    "min": "最小値",
+    "max": "最大値",
+    "metrics": "メトリクス"
+  },
+  "community": {
+    "discrepancy": "乖離分析",
+    "top_airing": "グローバル トップ20 (現在放送中)",
+    "top_all_time": "MAL 歴代トップ10",
+    "personal": "個人",
+    "community": "コミュニティ"
+  },
+  "franchise": {
+    "no_relations": "選択した作品には、データベースに登録されている続編や前日譚がありません。",
+    "unknown": "不明",
+    "download_png": "PNGをダウンロード（高解像度）",
+    "download_svg": "SVGをダウンロード（ベクター）",
+    "export_pdf": "PDFをエクスポート（自動フレーミング）",
+    "close_graph": "グラフを閉じる",
+    "mapping_connections": "トポロジー接続をマッピング中...",
+    "querying_api": "MAL APIマトリックスを照会中",
+    "select_seed": "シードノードを選択してください",
+    "personal": "個人",
+    "global": "グローバル",
+    "status": "ステータス",
+    "episodes": "エピソード"
+  },
+  "login": {
+  "title": "MALmetricsへようこそ",
+  "subtitle": "ダッシュボードを表示するには認証情報を入力してください",
+  "username_label": "MyAnimeListユーザー名",
+  "username_placeholder": "例: YourUsername",
+  "client_id_label": "クライアントID（API）",
+  "client_id_placeholder": "英数字の文字列",
+  "submit": "ダッシュボードにアクセス",
+  "help_text": "クライアントIDの取得方法がわかりませんか？",
+  "help_link": "3ステップのマニュアルはこちら",
+  "username_desc": "公開プロフィール名",
+  "client_id_desc": "API接続用のシークレットキー"
+}
+}

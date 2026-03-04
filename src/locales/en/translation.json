@@ -1,0 +1,126 @@
+{
+  "common": {
+    "na": "N/A"
+  },
+  "nav": {
+    "overview": "Overview",
+    "seasons": "Seasons",
+    "scores": "My Scores",
+    "community": "Community",
+    "franchises": "Franchises"
+  },
+  "status": {
+    "completed": "Completed",
+    "watching": "Watching",
+    "plan_to_watch": "Plan to Watch",
+    "on_hold": "On Hold",
+    "dropped": "Dropped"
+  },
+  "kpi": {
+    "total_episodes": "Total Episodes",
+    "avg_score": "Average Score",
+    "top_genre": "Top Genre",
+    "top_studio": "Top Studio",
+    "total_days": "Total Days"
+  },
+  "seasons": {
+    "winter": "Winter",
+    "spring": "Spring",
+    "summer": "Summer",
+    "fall": "Fall",
+    "evolution": "Evolution",
+    "most_productive": "Most Productive Season",
+    "least_active": "Least Active Season",
+    "completed_animes": "completed animes",
+    "best_scored": "Best Scored",
+    "worst_scored": "Worst Scored",
+    "current_airing": "Currently Airing (Popularity Ranking)"
+  },
+  "table": {
+    "cover": "Cover",
+    "title": "Title",
+    "mal_score": "MAL Score",
+    "members": "Members",
+    "list_status": "Status (List)",
+    "anime": "Anime",
+    "my_status": "My Status"
+  },
+  "charts": {
+    "log_scale_note": "Y-Axis: Log₁₀(n+1)",
+    "most_frequent": "★ Most frequent",
+    "average": "Average",
+    "personal_score": "Personal Score",
+    "community_score": "Community Score",
+    "animes": "Animes",
+    "linear_scale": "Linear Scale",
+    "log_scale": "Logarithmic Scale",
+    "quantity": "Quantity",
+    "score": "Score"
+  },
+  "errors": {
+    "rate_limit": "Rate limit — retrying…",
+    "unauthorized": "Session expired. Check your Client ID.",
+    "forbidden": "Access denied by MAL API.",
+    "not_found": "Resource not found.",
+    "no_internet": "No internet connection"
+  },
+  "actions": {
+    "refresh": "Refresh data",
+    "search_placeholder": "Search franchise or anime...",
+    "in_my_list": "✓ In my list",
+    "missing_from_list": "Missing from list"
+  },
+  "empty": {
+    "no_anime": "No anime found.",
+    "suggestion": "Add anime to your list on MyAnimeList.net"
+  },
+  "filters": {
+    "all": "All",
+    "completed_only": "Completed Only",
+    "watching_only": "Watching Only"
+  },
+  "stats": {
+    "mean": "Mean",
+    "median": "Median",
+    "mode": "Mode",
+    "std_dev": "Standard Deviation",
+    "min": "Minimum",
+    "max": "Maximum",
+    "metrics": "Metrics"
+  },
+  "community": {
+    "discrepancy": "Discrepancy Analysis",
+    "top_airing": "Global Top 20 (Currently Airing)",
+    "top_all_time": "MAL All-Time Top 10",
+    "personal": "Personal",
+    "community": "Community"
+  },
+  "franchise": {
+    "no_relations": "The selected work has no sequels or prequels registered in the database.",
+    "unknown": "Unknown",
+    "download_png": "Download PNG (High Resolution)",
+    "download_svg": "Download SVG (Vector)",
+    "export_pdf": "Export PDF (Auto-framing)",
+    "close_graph": "Close Graph",
+    "mapping_connections": "Mapping topological connections...",
+    "querying_api": "Querying MAL API matrix",
+    "select_seed": "Select a Seed Node",
+    "personal": "Personal",
+    "global": "Global",
+    "status": "Status",
+    "episodes": "Episodes"
+  },
+  "login": {
+    "title": "Welcome to MALmetrics",
+    "subtitle": "Enter your credentials to render the dashboard",
+    "username_label": "MyAnimeList Username",
+    "username_placeholder": "e.g. YourUsername",
+    "username_desc": "What do you want to call yourself?",
+    "client_id_label": "Client ID (API)",
+    "client_id_placeholder": "Alphanumeric string",
+    "client_id_desc": "Your secret API connection string",
+    "submit": "Access Dashboard",
+    "help_text": "Don't know how to get your Client ID?",
+    "help_link": "Read the 3-step manual here"
+  }
+}
