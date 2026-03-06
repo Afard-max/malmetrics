@@ -1,4 +1,3 @@
-
 # MAL-PERSONAL-DASHBOARD (malmetrics)
 
 A sleek, modern, and personal dashboard to visualize your MyAnimeList (MAL) data and explore community statistics. Built with React, Vite, and Tailwind CSS, this application provides a dynamic and responsive user experience for tracking your anime-watching habits.
@@ -20,8 +19,8 @@ The project follows a modern frontend architecture based on components, hooks, a
 - **Framework**: [React](https://react.dev/) (with [Vite](https://vitejs.dev/)) for a fast and efficient development experience.
 - **Routing**: [React Router](https://reactrouter.com/) (`HashRouter`) is used for all client-side routing.
 - **State Management**:
-    - **Client State**: [Zustand](https://github.com/pmndrs/zustand) is used for lightweight global state management (e.g., UI state).
-    - **Server State**: [TanStack Query](https://tanstack.com/query/latest) handles all asynchronous operations, including data fetching, caching, and re-fetching from the MAL API.
+  - **Client State**: [Zustand](https://github.com/pmndrs/zustand) is used for lightweight global state management (e.g., UI state).
+  - **Server State**: [TanStack Query](https://tanstack.com/query/latest) handles all asynchronous operations, including data fetching, caching, and re-fetching from the MAL API.
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) is used for utility-first styling, enabling rapid and consistent UI development.
 - **Data Visualization**: [Recharts](https://recharts.org/) and [D3](https://d3js.org/) are used to create interactive and informative charts.
 - **API Communication**: A dedicated API layer in `src/api` manages all communication with the MyAnimeList API. A custom `malFetch` function handles requests, adding the required `X-MAL-CLIENT-ID` header, and includes retry logic for rate limiting (429 errors).
@@ -98,5 +97,3 @@ The application will be available at `http://localhost:5173` (or the next availa
 - `npm run deploy`: Deploys the application to GitHub Pages.
 
 ---
-
-*This README was generated with assistance from an AI tool.*
