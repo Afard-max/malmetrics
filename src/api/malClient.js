@@ -1,7 +1,8 @@
 import i18n from '../i18n';
 
-// Restauramos tu BASE_URL original para que el proxy de Vite local vuelva a funcionar
-const BASE_URL = '/api/mal';
+const BASE_URL = import.meta.env.DEV 
+  ? '/api/mal' 
+  : 'https://corsproxy.io/?https://api.myanimelist.net/v2';
 
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
