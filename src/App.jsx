@@ -1,16 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense, lazy } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Sidebar } from './components/layout/Sidebar';
 import { TopBar } from './components/layout/TopBar';
-import { Dashboard } from './pages/Dashboard';
-import { ScoresPanel } from './pages/ScoresPanel';
-import { SeasonalPanel } from './pages/SeasonalPanel';
-import { CommunityPanel } from './pages/CommunityPanel';
-import { FranchisePanel } from './pages/FranchisePanel';
-import { Login } from './pages/Login'; // <-- Importamos el Login
+import { Login } from './pages/Login'; // Importación estática preservada
+
+// Resolución algorítmica para compatibilidad de React.lazy con exportaciones nombradas
+const Dashboard = lazy(() => import('./pages/Dashboard').then(module => ({ default: module.Dashboard })));
+const ScoresPanel = lazy(() => import('./pages/ScoresPanel').then(module => ({ default: module.ScoresPanel })));
+const SeasonalPanel = lazy(() => import('./pages/SeasonalPanel').then(module => ({ default: module.SeasonalPanel })));
+const CommunityPanel = lazy(() => import('./pages/CommunityPanel').then(module => ({ default: module.CommunityPanel })));
+const FranchisePanel = lazy(() => import('./pages/FranchisePanel').then(module => ({ default: module.FranchisePanel })));
 
 export const App = () => {
-  // Estado que verifica si existen credenciales en el navegador
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
@@ -19,12 +20,10 @@ export const App = () => {
     if (user && token) setIsAuthenticated(true);
   }, []);
 
-  // Si no está autenticado, renderiza exclusivamente el Login
   if (!isAuthenticated) {
     return <Login onLogin={() => setIsAuthenticated(true)} />;
   }
 
-  // Si está autenticado, renderiza el Dashboard normal
   return (
     <HashRouter>
       <div className="flex h-screen w-full flex-col overflow-hidden bg-slate-50 text-slate-900 transition-colors duration-300 dark:bg-gradient-to-br dark:from-[#0D0D1A] dark:to-[#1A0A2E] dark:text-[#F1F5F9]">
@@ -32,13 +31,15 @@ export const App = () => {
         <div className="relative flex flex-1 overflow-hidden">
           <Sidebar />
           <main className="flex-1 overflow-y-auto p-4 pb-24 md:p-6 md:pb-6">
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/seasons" element={<SeasonalPanel />} />
-              <Route path="/scores" element={<ScoresPanel />} />
-              <Route path="/community" element={<CommunityPanel />} />
-              <Route path="/franchises" element={<FranchisePanel />} />
-            </Routes>
+            <Suspense fallback={<div className="flex h-full w-full items-center justify-center p-8 font-mono text-sm opacity-70">Cargando módulo...</div>}>
+              <Routes>
+                <Route path="/" element={<Dashboard />} />
+                <Route path="/seasons" element={<SeasonalPanel />} />
+                <Route path="/scores" element={<ScoresPanel />} />
+                <Route path="/community" element={<CommunityPanel />} />
+                <Route path="/franchises" element={<FranchisePanel />} />
+              </Routes>
+            </Suspense>
           </main>
         </div>
       </div>
