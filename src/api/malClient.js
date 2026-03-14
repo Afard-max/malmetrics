@@ -1,9 +1,5 @@
 import i18n from '../i18n';
 
-const BASE_URL = import.meta.env.DEV 
-  ? '/api/mal' 
-  : 'https://corsproxy.io/?https://api.myanimelist.net/v2';
-
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 const dispatchApiError = (messageKey) => {
@@ -18,14 +14,18 @@ export const malFetch = async (endpoint, options = {}, retries = 0) => {
     throw new Error('Network offline');
   }
 
-  // LECTURA DINÁMICA: Esto DEBE ir aquí adentro. 
-  // Así se asegura de leer la memoria en el instante exacto en que la app pide los datos.
   const clientId = localStorage.getItem('mal_client_id');
 
   if (!clientId) {
     throw new Error('Autenticación fallida: Client ID no encontrado en localStorage');
   }
 
+  // 1. Bifurcación de entorno y definición del vector base
+  const BASE_URL = import.meta.env.DEV 
+    ? '/api/mal' // Proxy local de Vite
+    : 'https://malmetrics-proxy.af-alexander-rd.workers.dev'; // Nodo proxy Serverless
+
+  // 2. Ensamblaje estricto de la URL (sin codificación URI)
   const url = endpoint.startsWith('http') ? endpoint : `${BASE_URL}${endpoint}`;
 
   const headers = {
